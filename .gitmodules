@@ -1,0 +1,3 @@
+[submodule "imgclean"]
+	path = imgclean
+	url = https://github.com/xLPMG/imgclean.git
