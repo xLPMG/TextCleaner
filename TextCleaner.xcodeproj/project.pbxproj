@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9279FD22EF99F37000F76CB /* imgclean in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FD12EF99F37000F76CB /* imgclean */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9279FD22EF99F37000F76CB /* imgclean in Copy Files */ = {isa = PBXBuildFile; fileRef = D9279FD12EF99F37000F76CB /* imgclean */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D9279FEF2EF9A7DD000F76CB /* libgomp.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEA2EF9A7DD000F76CB /* libgomp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D9279FF02EF9A7DD000F76CB /* libpng16.16.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEB2EF9A7DD000F76CB /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D9279FF12EF9A7DD000F76CB /* libstdc++.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEC2EF9A7DD000F76CB /* libstdc++.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D9279FF22EF9A7DD000F76CB /* libgcc_s.1.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FED2EF9A7DD000F76CB /* libgcc_s.1.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D9279FF32EF9A7DD000F76CB /* libjpeg.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEE2EF9A7DD000F76CB /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D9279FF52EF9A803000F76CB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D9279FF42EF9A7FD000F76CB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +47,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9B3D3912EF97BF400FCAE89 /* CopyFiles */ = {
+		D9B3D3912EF97BF400FCAE89 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				D9279FD22EF99F37000F76CB /* imgclean in CopyFiles */,
+				D9279FD22EF99F37000F76CB /* imgclean in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -128,11 +128,11 @@
 				D9279FEC2EF9A7DD000F76CB /* libstdc++.6.dylib */,
 				D9279FE82EF9A6BC000F76CB /* imgclean-frameworks */,
 				D9279FD12EF99F37000F76CB /* imgclean */,
-				D95ACA382EF8758E0091AED3 /* TextCleaner */,
 				D95ACA482EF8758F0091AED3 /* TextCleanerTests */,
 				D95ACA522EF8758F0091AED3 /* TextCleanerUITests */,
 				D9B3D23B2EF978D200FCAE89 /* Frameworks */,
 				D95ACA372EF8758E0091AED3 /* Products */,
+				D95ACA382EF8758E0091AED3 /* TextCleaner */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,7 +163,7 @@
 				D95ACA322EF8758E0091AED3 /* Sources */,
 				D95ACA332EF8758E0091AED3 /* Frameworks */,
 				D95ACA342EF8758E0091AED3 /* Resources */,
-				D9B3D3912EF97BF400FCAE89 /* CopyFiles */,
+				D9B3D3912EF97BF400FCAE89 /* Copy Files */,
 				D9279FD32EF9A1FD000F76CB /* CopyFiles */,
 			);
 			buildRules = (
@@ -300,7 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9279FF52EF9A803000F76CB /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,8 +466,18 @@
 				DEVELOPMENT_TEAM = 49QA7U9HVB;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
@@ -518,8 +527,18 @@
 				DEVELOPMENT_TEAM = 49QA7U9HVB;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
