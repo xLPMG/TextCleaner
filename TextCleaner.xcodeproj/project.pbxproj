@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D9279FD22EF99F37000F76CB /* imgclean in Copy Files */ = {isa = PBXBuildFile; fileRef = D9279FD12EF99F37000F76CB /* imgclean */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D9279FEF2EF9A7DD000F76CB /* libgomp.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEA2EF9A7DD000F76CB /* libgomp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D9279FF02EF9A7DD000F76CB /* libpng16.16.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEB2EF9A7DD000F76CB /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D9279FF12EF9A7DD000F76CB /* libstdc++.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEC2EF9A7DD000F76CB /* libstdc++.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D9279FF22EF9A7DD000F76CB /* libgcc_s.1.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FED2EF9A7DD000F76CB /* libgcc_s.1.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D9279FF32EF9A7DD000F76CB /* libjpeg.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEE2EF9A7DD000F76CB /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D947264B2EFA0F5D009ECEDF /* libgcc_s.1.1.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726442EFA0F5D009ECEDF /* libgcc_s.1.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D947264C2EFA0F5D009ECEDF /* libjpeg.8.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726452EFA0F5D009ECEDF /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D947264D2EFA0F5D009ECEDF /* libintl.8.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726462EFA0F5D009ECEDF /* libintl.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D947264E2EFA0F5D009ECEDF /* libgomp.1.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726472EFA0F5D009ECEDF /* libgomp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D947264F2EFA0F5D009ECEDF /* libpng16.16.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726482EFA0F5D009ECEDF /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D94726502EFA0F5D009ECEDF /* libstdc++.6.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726492EFA0F5D009ECEDF /* libstdc++.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D94726512EFA0F5D009ECEDF /* libexif.12.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D947264A2EFA0F5D009ECEDF /* libexif.12.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,18 +35,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D9279FD32EF9A1FD000F76CB /* CopyFiles */ = {
+		D9279FD32EF9A1FD000F76CB /* Copy Files (7 items) */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D9279FEF2EF9A7DD000F76CB /* libgomp.1.dylib in CopyFiles */,
-				D9279FF02EF9A7DD000F76CB /* libpng16.16.dylib in CopyFiles */,
-				D9279FF12EF9A7DD000F76CB /* libstdc++.6.dylib in CopyFiles */,
-				D9279FF22EF9A7DD000F76CB /* libgcc_s.1.1.dylib in CopyFiles */,
-				D9279FF32EF9A7DD000F76CB /* libjpeg.8.dylib in CopyFiles */,
+				D947264B2EFA0F5D009ECEDF /* libgcc_s.1.1.dylib in Copy Files (7 items) */,
+				D947264C2EFA0F5D009ECEDF /* libjpeg.8.dylib in Copy Files (7 items) */,
+				D947264D2EFA0F5D009ECEDF /* libintl.8.dylib in Copy Files (7 items) */,
+				D947264E2EFA0F5D009ECEDF /* libgomp.1.dylib in Copy Files (7 items) */,
+				D947264F2EFA0F5D009ECEDF /* libpng16.16.dylib in Copy Files (7 items) */,
+				D94726502EFA0F5D009ECEDF /* libstdc++.6.dylib in Copy Files (7 items) */,
+				D94726512EFA0F5D009ECEDF /* libexif.12.dylib in Copy Files (7 items) */,
 			);
+			name = "Copy Files (7 items)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D9B3D3912EF97BF400FCAE89 /* Copy Files */ = {
@@ -63,12 +68,13 @@
 /* Begin PBXFileReference section */
 		D9279FD12EF99F37000F76CB /* imgclean */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = imgclean; path = imgclean/project/build/imgclean; sourceTree = "<group>"; };
 		D9279FE82EF9A6BC000F76CB /* imgclean-frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "imgclean-frameworks"; sourceTree = "<group>"; };
-		D9279FEA2EF9A7DD000F76CB /* libgomp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgomp.1.dylib; path = "imgclean-frameworks/libgomp.1.dylib"; sourceTree = "<group>"; };
-		D9279FEB2EF9A7DD000F76CB /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = "imgclean-frameworks/libpng16.16.dylib"; sourceTree = "<group>"; };
-		D9279FEC2EF9A7DD000F76CB /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "imgclean-frameworks/libstdc++.6.dylib"; sourceTree = "<group>"; };
-		D9279FED2EF9A7DD000F76CB /* libgcc_s.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgcc_s.1.1.dylib; path = "imgclean-frameworks/libgcc_s.1.1.dylib"; sourceTree = "<group>"; };
-		D9279FEE2EF9A7DD000F76CB /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.8.dylib; path = "imgclean-frameworks/libjpeg.8.dylib"; sourceTree = "<group>"; };
-		D9279FF42EF9A7FD000F76CB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
+		D94726442EFA0F5D009ECEDF /* libgcc_s.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgcc_s.1.1.dylib; path = "imgclean-frameworks/libgcc_s.1.1.dylib"; sourceTree = "<group>"; };
+		D94726452EFA0F5D009ECEDF /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.8.dylib; path = "imgclean-frameworks/libjpeg.8.dylib"; sourceTree = "<group>"; };
+		D94726462EFA0F5D009ECEDF /* libintl.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libintl.8.dylib; path = "imgclean-frameworks/libintl.8.dylib"; sourceTree = "<group>"; };
+		D94726472EFA0F5D009ECEDF /* libgomp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgomp.1.dylib; path = "imgclean-frameworks/libgomp.1.dylib"; sourceTree = "<group>"; };
+		D94726482EFA0F5D009ECEDF /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = "imgclean-frameworks/libpng16.16.dylib"; sourceTree = "<group>"; };
+		D94726492EFA0F5D009ECEDF /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "imgclean-frameworks/libstdc++.6.dylib"; sourceTree = "<group>"; };
+		D947264A2EFA0F5D009ECEDF /* libexif.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexif.12.dylib; path = "imgclean-frameworks/libexif.12.dylib"; sourceTree = "<group>"; };
 		D95ACA362EF8758E0091AED3 /* TextCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95ACA452EF8758F0091AED3 /* TextCleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextCleanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95ACA4F2EF8758F0091AED3 /* TextCleanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextCleanerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,12 +126,13 @@
 		D95ACA2D2EF8758E0091AED3 = {
 			isa = PBXGroup;
 			children = (
-				D9279FF42EF9A7FD000F76CB /* README.md */,
-				D9279FED2EF9A7DD000F76CB /* libgcc_s.1.1.dylib */,
-				D9279FEA2EF9A7DD000F76CB /* libgomp.1.dylib */,
-				D9279FEE2EF9A7DD000F76CB /* libjpeg.8.dylib */,
-				D9279FEB2EF9A7DD000F76CB /* libpng16.16.dylib */,
-				D9279FEC2EF9A7DD000F76CB /* libstdc++.6.dylib */,
+				D947264A2EFA0F5D009ECEDF /* libexif.12.dylib */,
+				D94726442EFA0F5D009ECEDF /* libgcc_s.1.1.dylib */,
+				D94726472EFA0F5D009ECEDF /* libgomp.1.dylib */,
+				D94726462EFA0F5D009ECEDF /* libintl.8.dylib */,
+				D94726452EFA0F5D009ECEDF /* libjpeg.8.dylib */,
+				D94726482EFA0F5D009ECEDF /* libpng16.16.dylib */,
+				D94726492EFA0F5D009ECEDF /* libstdc++.6.dylib */,
 				D9279FE82EF9A6BC000F76CB /* imgclean-frameworks */,
 				D9279FD12EF99F37000F76CB /* imgclean */,
 				D95ACA482EF8758F0091AED3 /* TextCleanerTests */,
@@ -164,7 +171,7 @@
 				D95ACA332EF8758E0091AED3 /* Frameworks */,
 				D95ACA342EF8758E0091AED3 /* Resources */,
 				D9B3D3912EF97BF400FCAE89 /* Copy Files */,
-				D9279FD32EF9A1FD000F76CB /* CopyFiles */,
+				D9279FD32EF9A1FD000F76CB /* Copy Files (7 items) */,
 			);
 			buildRules = (
 			);
