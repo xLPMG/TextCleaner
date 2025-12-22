@@ -1,2 +1,21 @@
-.vscode/
+# Xcode
+*.xcworkspace
+*.xcuserdata
+*.moved-aside
+*.swp
+*.xcuserstate
+DerivedData/
+
+# Swift Package Manager
+.build/
+Packages/
+
+# macOS / iOS
+*.DS_Store
+
+# Temporary files
+*.tmp
 imgclean-frameworks
+
+# IDE
+.vscode/
