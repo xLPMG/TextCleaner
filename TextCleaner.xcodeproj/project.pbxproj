@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D95ACB082EF88F680091AED3 /* imgclean in CopyFiles */ = {isa = PBXBuildFile; fileRef = D95ACAE82EF88F580091AED3 /* imgclean */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9279FD22EF99F37000F76CB /* imgclean in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FD12EF99F37000F76CB /* imgclean */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9279FEF2EF9A7DD000F76CB /* libgomp.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEA2EF9A7DD000F76CB /* libgomp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9279FF02EF9A7DD000F76CB /* libpng16.16.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEB2EF9A7DD000F76CB /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9279FF12EF9A7DD000F76CB /* libstdc++.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEC2EF9A7DD000F76CB /* libstdc++.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9279FF22EF9A7DD000F76CB /* libgcc_s.1.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FED2EF9A7DD000F76CB /* libgcc_s.1.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9279FF32EF9A7DD000F76CB /* libjpeg.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9279FEE2EF9A7DD000F76CB /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9279FF52EF9A803000F76CB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D9279FF42EF9A7FD000F76CB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,84 +34,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D95ACAB02EF88EFC0091AED3 /* CopyFiles */ = {
+		D9279FD32EF9A1FD000F76CB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D9279FEF2EF9A7DD000F76CB /* libgomp.1.dylib in CopyFiles */,
+				D9279FF02EF9A7DD000F76CB /* libpng16.16.dylib in CopyFiles */,
+				D9279FF12EF9A7DD000F76CB /* libstdc++.6.dylib in CopyFiles */,
+				D9279FF22EF9A7DD000F76CB /* libgcc_s.1.1.dylib in CopyFiles */,
+				D9279FF32EF9A7DD000F76CB /* libjpeg.8.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B3D3912EF97BF400FCAE89 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				D95ACB082EF88F680091AED3 /* imgclean in CopyFiles */,
+				D9279FD22EF99F37000F76CB /* imgclean in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D9279FD12EF99F37000F76CB /* imgclean */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = imgclean; path = imgclean/project/build/imgclean; sourceTree = "<group>"; };
+		D9279FE82EF9A6BC000F76CB /* imgclean-frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "imgclean-frameworks"; sourceTree = "<group>"; };
+		D9279FEA2EF9A7DD000F76CB /* libgomp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgomp.1.dylib; path = "imgclean-frameworks/libgomp.1.dylib"; sourceTree = "<group>"; };
+		D9279FEB2EF9A7DD000F76CB /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = "imgclean-frameworks/libpng16.16.dylib"; sourceTree = "<group>"; };
+		D9279FEC2EF9A7DD000F76CB /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "imgclean-frameworks/libstdc++.6.dylib"; sourceTree = "<group>"; };
+		D9279FED2EF9A7DD000F76CB /* libgcc_s.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgcc_s.1.1.dylib; path = "imgclean-frameworks/libgcc_s.1.1.dylib"; sourceTree = "<group>"; };
+		D9279FEE2EF9A7DD000F76CB /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.8.dylib; path = "imgclean-frameworks/libjpeg.8.dylib"; sourceTree = "<group>"; };
+		D9279FF42EF9A7FD000F76CB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
 		D95ACA362EF8758E0091AED3 /* TextCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95ACA452EF8758F0091AED3 /* TextCleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextCleanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95ACA4F2EF8758F0091AED3 /* TextCleanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextCleanerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D95ACAB12EF88F580091AED3 /* tests.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = tests.yml; sourceTree = "<group>"; };
-		D95ACAB42EF88F580091AED3 /* integer_sets.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = integer_sets.pdf; sourceTree = "<group>"; };
-		D95ACAB62EF88F580091AED3 /* literature.bib */ = {isa = PBXFileReference; lastKnownFileType = text; path = literature.bib; sourceTree = "<group>"; };
-		D95ACAB72EF88F580091AED3 /* paper.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = paper.pdf; sourceTree = "<group>"; };
-		D95ACAB82EF88F580091AED3 /* paper.tex */ = {isa = PBXFileReference; lastKnownFileType = text; path = paper.tex; sourceTree = "<group>"; };
-		D95ACABB2EF88F580091AED3 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
-		D95ACABC2EF88F580091AED3 /* apple-sdk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "apple-sdk.c"; sourceTree = "<group>"; };
-		D95ACABD2EF88F580091AED3 /* CMakeCCompilerId.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CMakeCCompilerId.c; sourceTree = "<group>"; };
-		D95ACAC02EF88F580091AED3 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
-		D95ACAC12EF88F580091AED3 /* CMakeCXXCompilerId.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CMakeCXXCompilerId.cpp; sourceTree = "<group>"; };
-		D95ACAC32EF88F580091AED3 /* CMakeCCompiler.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeCCompiler.cmake; sourceTree = "<group>"; };
-		D95ACAC42EF88F580091AED3 /* CMakeCXXCompiler.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeCXXCompiler.cmake; sourceTree = "<group>"; };
-		D95ACAC52EF88F580091AED3 /* CMakeDetermineCompilerABI_C.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = CMakeDetermineCompilerABI_C.bin; sourceTree = "<group>"; };
-		D95ACAC62EF88F580091AED3 /* CMakeDetermineCompilerABI_CXX.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = CMakeDetermineCompilerABI_CXX.bin; sourceTree = "<group>"; };
-		D95ACAC72EF88F580091AED3 /* CMakeSystem.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeSystem.cmake; sourceTree = "<group>"; };
-		D95ACACA2EF88F580091AED3 /* ompver_C.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = ompver_C.bin; sourceTree = "<group>"; };
-		D95ACACB2EF88F580091AED3 /* ompver_CXX.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = ompver_CXX.bin; sourceTree = "<group>"; };
-		D95ACACD2EF88F580091AED3 /* FileHandler.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = FileHandler.cpp.o; sourceTree = "<group>"; };
-		D95ACACE2EF88F580091AED3 /* FileHandler.cpp.o.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = FileHandler.cpp.o.d; sourceTree = "<group>"; };
-		D95ACACF2EF88F580091AED3 /* Main.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = Main.cpp.o; sourceTree = "<group>"; };
-		D95ACAD02EF88F580091AED3 /* Main.cpp.o.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = Main.cpp.o.d; sourceTree = "<group>"; };
-		D95ACAD22EF88F580091AED3 /* build.make */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = build.make; sourceTree = "<group>"; };
-		D95ACAD32EF88F580091AED3 /* cmake_clean.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = cmake_clean.cmake; sourceTree = "<group>"; };
-		D95ACAD42EF88F580091AED3 /* compiler_depend.make */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = compiler_depend.make; sourceTree = "<group>"; };
-		D95ACAD52EF88F580091AED3 /* compiler_depend.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = compiler_depend.ts; sourceTree = "<group>"; };
-		D95ACAD62EF88F580091AED3 /* depend.make */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = depend.make; sourceTree = "<group>"; };
-		D95ACAD72EF88F580091AED3 /* DependInfo.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = DependInfo.cmake; sourceTree = "<group>"; };
-		D95ACAD82EF88F580091AED3 /* flags.make */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = flags.make; sourceTree = "<group>"; };
-		D95ACAD92EF88F580091AED3 /* link.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = link.txt; sourceTree = "<group>"; };
-		D95ACADA2EF88F580091AED3 /* progress.make */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = progress.make; sourceTree = "<group>"; };
-		D95ACADD2EF88F580091AED3 /* cmake.check_cache */ = {isa = PBXFileReference; lastKnownFileType = text; path = cmake.check_cache; sourceTree = "<group>"; };
-		D95ACADE2EF88F580091AED3 /* CMakeConfigureLog.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = CMakeConfigureLog.yaml; sourceTree = "<group>"; };
-		D95ACADF2EF88F580091AED3 /* CMakeDirectoryInformation.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeDirectoryInformation.cmake; sourceTree = "<group>"; };
-		D95ACAE02EF88F580091AED3 /* InstallScripts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InstallScripts.json; sourceTree = "<group>"; };
-		D95ACAE12EF88F580091AED3 /* Makefile.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.cmake; sourceTree = "<group>"; };
-		D95ACAE22EF88F580091AED3 /* Makefile2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile2; sourceTree = "<group>"; };
-		D95ACAE32EF88F580091AED3 /* progress.marks */ = {isa = PBXFileReference; lastKnownFileType = text; path = progress.marks; sourceTree = "<group>"; };
-		D95ACAE42EF88F580091AED3 /* TargetDirectories.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TargetDirectories.txt; sourceTree = "<group>"; };
-		D95ACAE62EF88F580091AED3 /* cmake_install.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = cmake_install.cmake; sourceTree = "<group>"; };
-		D95ACAE72EF88F580091AED3 /* CMakeCache.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeCache.txt; sourceTree = "<group>"; };
-		D95ACAE82EF88F580091AED3 /* imgclean */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = imgclean; sourceTree = "<group>"; };
-		D95ACAE92EF88F580091AED3 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		D95ACAEB2EF88F580091AED3 /* catch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
-		D95ACAEC2EF88F580091AED3 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
-		D95ACAEE2EF88F580091AED3 /* FileHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileHandler.hpp; sourceTree = "<group>"; };
-		D95ACAEF2EF88F580091AED3 /* FilePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FilePath.hpp; sourceTree = "<group>"; };
-		D95ACAF02EF88F580091AED3 /* ImageFormat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImageFormat.hpp; sourceTree = "<group>"; };
-		D95ACAF12EF88F580091AED3 /* PPMImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PPMImage.hpp; sourceTree = "<group>"; };
-		D95ACAF42EF88F580091AED3 /* 3x3-test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3x3-test.jpg"; sourceTree = "<group>"; };
-		D95ACAF52EF88F580091AED3 /* 3x3-test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3x3-test.png"; sourceTree = "<group>"; };
-		D95ACAF62EF88F580091AED3 /* 3x3-test.ppm */ = {isa = PBXFileReference; lastKnownFileType = text; path = "3x3-test.ppm"; sourceTree = "<group>"; };
-		D95ACAF72EF88F580091AED3 /* large-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "large-pic.jpg"; sourceTree = "<group>"; };
-		D95ACAFA2EF88F580091AED3 /* FileHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileHandler.cpp; sourceTree = "<group>"; };
-		D95ACAFB2EF88F580091AED3 /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
-		D95ACAFD2EF88F580091AED3 /* FileHandler.test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileHandler.test.cpp; sourceTree = "<group>"; };
-		D95ACAFE2EF88F580091AED3 /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
-		D95ACB002EF88F580091AED3 /* .clang-format */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".clang-format"; sourceTree = "<group>"; };
-		D95ACB012EF88F580091AED3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		D95ACB022EF88F580091AED3 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
-		D95ACB032EF88F580091AED3 /* build-and-test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-and-test.sh"; sourceTree = "<group>"; };
-		D95ACB042EF88F580091AED3 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
-		D95ACB062EF88F580091AED3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -154,11 +120,19 @@
 		D95ACA2D2EF8758E0091AED3 = {
 			isa = PBXGroup;
 			children = (
+				D9279FF42EF9A7FD000F76CB /* README.md */,
+				D9279FED2EF9A7DD000F76CB /* libgcc_s.1.1.dylib */,
+				D9279FEA2EF9A7DD000F76CB /* libgomp.1.dylib */,
+				D9279FEE2EF9A7DD000F76CB /* libjpeg.8.dylib */,
+				D9279FEB2EF9A7DD000F76CB /* libpng16.16.dylib */,
+				D9279FEC2EF9A7DD000F76CB /* libstdc++.6.dylib */,
+				D9279FE82EF9A6BC000F76CB /* imgclean-frameworks */,
+				D9279FD12EF99F37000F76CB /* imgclean */,
 				D95ACA382EF8758E0091AED3 /* TextCleaner */,
 				D95ACA482EF8758F0091AED3 /* TextCleanerTests */,
 				D95ACA522EF8758F0091AED3 /* TextCleanerUITests */,
+				D9B3D23B2EF978D200FCAE89 /* Frameworks */,
 				D95ACA372EF8758E0091AED3 /* Products */,
-				D95ACB072EF88F580091AED3 /* imgclean */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,287 +146,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D95ACAB22EF88F580091AED3 /* workflows */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAB12EF88F580091AED3 /* tests.yml */,
-			);
-			path = workflows;
-			sourceTree = "<group>";
-		};
-		D95ACAB32EF88F580091AED3 /* .github */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAB22EF88F580091AED3 /* workflows */,
-			);
-			path = .github;
-			sourceTree = "<group>";
-		};
-		D95ACAB52EF88F580091AED3 /* graphics */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAB42EF88F580091AED3 /* integer_sets.pdf */,
-			);
-			path = graphics;
-			sourceTree = "<group>";
-		};
-		D95ACAB92EF88F580091AED3 /* paper */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAB52EF88F580091AED3 /* graphics */,
-				D95ACAB62EF88F580091AED3 /* literature.bib */,
-				D95ACAB72EF88F580091AED3 /* paper.pdf */,
-				D95ACAB82EF88F580091AED3 /* paper.tex */,
-			);
-			path = paper;
-			sourceTree = "<group>";
-		};
-		D95ACABA2EF88F580091AED3 /* tmp */ = {
+		D9B3D23B2EF978D200FCAE89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = tmp;
-			sourceTree = "<group>";
-		};
-		D95ACABE2EF88F580091AED3 /* CompilerIdC */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACABA2EF88F580091AED3 /* tmp */,
-				D95ACABB2EF88F580091AED3 /* a.out */,
-				D95ACABC2EF88F580091AED3 /* apple-sdk.c */,
-				D95ACABD2EF88F580091AED3 /* CMakeCCompilerId.c */,
-			);
-			path = CompilerIdC;
-			sourceTree = "<group>";
-		};
-		D95ACABF2EF88F580091AED3 /* tmp */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tmp;
-			sourceTree = "<group>";
-		};
-		D95ACAC22EF88F580091AED3 /* CompilerIdCXX */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACABF2EF88F580091AED3 /* tmp */,
-				D95ACAC02EF88F580091AED3 /* a.out */,
-				D95ACAC12EF88F580091AED3 /* CMakeCXXCompilerId.cpp */,
-			);
-			path = CompilerIdCXX;
-			sourceTree = "<group>";
-		};
-		D95ACAC82EF88F580091AED3 /* 4.2.1 */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACABE2EF88F580091AED3 /* CompilerIdC */,
-				D95ACAC22EF88F580091AED3 /* CompilerIdCXX */,
-				D95ACAC32EF88F580091AED3 /* CMakeCCompiler.cmake */,
-				D95ACAC42EF88F580091AED3 /* CMakeCXXCompiler.cmake */,
-				D95ACAC52EF88F580091AED3 /* CMakeDetermineCompilerABI_C.bin */,
-				D95ACAC62EF88F580091AED3 /* CMakeDetermineCompilerABI_CXX.bin */,
-				D95ACAC72EF88F580091AED3 /* CMakeSystem.cmake */,
-			);
-			path = 4.2.1;
-			sourceTree = "<group>";
-		};
-		D95ACAC92EF88F580091AED3 /* CMakeScratch */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CMakeScratch;
-			sourceTree = "<group>";
-		};
-		D95ACACC2EF88F580091AED3 /* FindOpenMP */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACACA2EF88F580091AED3 /* ompver_C.bin */,
-				D95ACACB2EF88F580091AED3 /* ompver_CXX.bin */,
-			);
-			path = FindOpenMP;
-			sourceTree = "<group>";
-		};
-		D95ACAD12EF88F580091AED3 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACACD2EF88F580091AED3 /* FileHandler.cpp.o */,
-				D95ACACE2EF88F580091AED3 /* FileHandler.cpp.o.d */,
-				D95ACACF2EF88F580091AED3 /* Main.cpp.o */,
-				D95ACAD02EF88F580091AED3 /* Main.cpp.o.d */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		D95ACADB2EF88F580091AED3 /* imgclean.dir */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAD12EF88F580091AED3 /* src */,
-				D95ACAD22EF88F580091AED3 /* build.make */,
-				D95ACAD32EF88F580091AED3 /* cmake_clean.cmake */,
-				D95ACAD42EF88F580091AED3 /* compiler_depend.make */,
-				D95ACAD52EF88F580091AED3 /* compiler_depend.ts */,
-				D95ACAD62EF88F580091AED3 /* depend.make */,
-				D95ACAD72EF88F580091AED3 /* DependInfo.cmake */,
-				D95ACAD82EF88F580091AED3 /* flags.make */,
-				D95ACAD92EF88F580091AED3 /* link.txt */,
-				D95ACADA2EF88F580091AED3 /* progress.make */,
-			);
-			path = imgclean.dir;
-			sourceTree = "<group>";
-		};
-		D95ACADC2EF88F580091AED3 /* pkgRedirects */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = pkgRedirects;
-			sourceTree = "<group>";
-		};
-		D95ACAE52EF88F580091AED3 /* CMakeFiles */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAC82EF88F580091AED3 /* 4.2.1 */,
-				D95ACAC92EF88F580091AED3 /* CMakeScratch */,
-				D95ACACC2EF88F580091AED3 /* FindOpenMP */,
-				D95ACADB2EF88F580091AED3 /* imgclean.dir */,
-				D95ACADC2EF88F580091AED3 /* pkgRedirects */,
-				D95ACADD2EF88F580091AED3 /* cmake.check_cache */,
-				D95ACADE2EF88F580091AED3 /* CMakeConfigureLog.yaml */,
-				D95ACADF2EF88F580091AED3 /* CMakeDirectoryInformation.cmake */,
-				D95ACAE02EF88F580091AED3 /* InstallScripts.json */,
-				D95ACAE12EF88F580091AED3 /* Makefile.cmake */,
-				D95ACAE22EF88F580091AED3 /* Makefile2 */,
-				D95ACAE32EF88F580091AED3 /* progress.marks */,
-				D95ACAE42EF88F580091AED3 /* TargetDirectories.txt */,
-			);
-			path = CMakeFiles;
-			sourceTree = "<group>";
-		};
-		D95ACAEA2EF88F580091AED3 /* build */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAE52EF88F580091AED3 /* CMakeFiles */,
-				D95ACAE62EF88F580091AED3 /* cmake_install.cmake */,
-				D95ACAE72EF88F580091AED3 /* CMakeCache.txt */,
-				D95ACAE82EF88F580091AED3 /* imgclean */,
-				D95ACAE92EF88F580091AED3 /* Makefile */,
-			);
-			path = build;
-			sourceTree = "<group>";
-		};
-		D95ACAED2EF88F580091AED3 /* catch2 */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAEB2EF88F580091AED3 /* catch.hpp */,
-				D95ACAEC2EF88F580091AED3 /* CMakeLists.txt */,
-			);
-			path = catch2;
-			sourceTree = "<group>";
-		};
-		D95ACAF22EF88F580091AED3 /* imgclean */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAEE2EF88F580091AED3 /* FileHandler.hpp */,
-				D95ACAEF2EF88F580091AED3 /* FilePath.hpp */,
-				D95ACAF02EF88F580091AED3 /* ImageFormat.hpp */,
-				D95ACAF12EF88F580091AED3 /* PPMImage.hpp */,
-			);
-			path = imgclean;
-			sourceTree = "<group>";
-		};
-		D95ACAF32EF88F580091AED3 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAED2EF88F580091AED3 /* catch2 */,
-				D95ACAF22EF88F580091AED3 /* imgclean */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		D95ACAF82EF88F580091AED3 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAF42EF88F580091AED3 /* 3x3-test.jpg */,
-				D95ACAF52EF88F580091AED3 /* 3x3-test.png */,
-				D95ACAF62EF88F580091AED3 /* 3x3-test.ppm */,
-				D95ACAF72EF88F580091AED3 /* large-pic.jpg */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
-		D95ACAF92EF88F580091AED3 /* res */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAF82EF88F580091AED3 /* test */,
-			);
-			path = res;
-			sourceTree = "<group>";
-		};
-		D95ACAFC2EF88F580091AED3 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAFA2EF88F580091AED3 /* FileHandler.cpp */,
-				D95ACAFB2EF88F580091AED3 /* Main.cpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		D95ACAFF2EF88F580091AED3 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAFD2EF88F580091AED3 /* FileHandler.test.cpp */,
-				D95ACAFE2EF88F580091AED3 /* Main.cpp */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
-		D95ACB052EF88F580091AED3 /* project */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAEA2EF88F580091AED3 /* build */,
-				D95ACAF32EF88F580091AED3 /* include */,
-				D95ACAF92EF88F580091AED3 /* res */,
-				D95ACAFC2EF88F580091AED3 /* src */,
-				D95ACAFF2EF88F580091AED3 /* test */,
-				D95ACB002EF88F580091AED3 /* .clang-format */,
-				D95ACB012EF88F580091AED3 /* .gitignore */,
-				D95ACB022EF88F580091AED3 /* build.sh */,
-				D95ACB032EF88F580091AED3 /* build-and-test.sh */,
-				D95ACB042EF88F580091AED3 /* CMakeLists.txt */,
-			);
-			path = project;
-			sourceTree = "<group>";
-		};
-		D95ACB072EF88F580091AED3 /* imgclean */ = {
-			isa = PBXGroup;
-			children = (
-				D95ACAB32EF88F580091AED3 /* .github */,
-				D95ACAB92EF88F580091AED3 /* paper */,
-				D95ACB052EF88F580091AED3 /* project */,
-				D95ACB062EF88F580091AED3 /* .gitignore */,
-			);
-			path = imgclean;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXLegacyTarget section */
-		D95ACAAB2EF888A10091AED3 /* imgclean */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "-S '${SRCROOT}/imgclean/project' -B '${SRCROOT}/imgclean/project/build' -DCMAKE_BUILD_TYPE=Release";
-			buildConfigurationList = D95ACAAC2EF888A10091AED3 /* Build configuration list for PBXLegacyTarget "imgclean" */;
-			buildPhases = (
-			);
-			buildToolPath = /opt/homebrew/bin/cmake;
-			buildWorkingDirectory = /Users/lpmg/Coding/TextCleaner/imgclean/project;
-			dependencies = (
-			);
-			name = imgclean;
-			packageProductDependencies = (
-			);
-			passBuildSettingsInEnvironment = 1;
-			productName = imgclean;
-		};
-/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		D95ACA352EF8758E0091AED3 /* TextCleaner */ = {
@@ -462,7 +163,8 @@
 				D95ACA322EF8758E0091AED3 /* Sources */,
 				D95ACA332EF8758E0091AED3 /* Frameworks */,
 				D95ACA342EF8758E0091AED3 /* Resources */,
-				D95ACAB02EF88EFC0091AED3 /* CopyFiles */,
+				D9B3D3912EF97BF400FCAE89 /* CopyFiles */,
+				D9279FD32EF9A1FD000F76CB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -536,6 +238,7 @@
 				TargetAttributes = {
 					D95ACA352EF8758E0091AED3 = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
 					D95ACA442EF8758F0091AED3 = {
 						CreatedOnToolsVersion = 26.2;
@@ -544,9 +247,6 @@
 					D95ACA4E2EF8758F0091AED3 = {
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = D95ACA352EF8758E0091AED3;
-					};
-					D95ACAAB2EF888A10091AED3 = {
-						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
@@ -567,7 +267,6 @@
 				D95ACA352EF8758E0091AED3 /* TextCleaner */,
 				D95ACA442EF8758F0091AED3 /* TextCleanerTests */,
 				D95ACA4E2EF8758F0091AED3 /* TextCleanerUITests */,
-				D95ACAAB2EF888A10091AED3 /* imgclean */,
 			);
 		};
 /* End PBXProject section */
@@ -601,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9279FF52EF9A803000F76CB /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,8 +457,10 @@
 		D95ACA5A2EF8758F0091AED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -768,12 +470,27 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/imgclean/project/include/**",
+				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/imgclean/project/build",
+					/opt/homebrew/Cellar/libomp/21.1.8/lib,
+					/opt/homebrew/Cellar/libpng/1.6.53/lib,
+					"/opt/homebrew/Cellar/jpeg-turbo/3.1.3/lib",
+					"$(PROJECT_DIR)/build/Debug",
+					"$(PROJECT_DIR)/imgclean/project/build/Debug",
+				);
 				MARKETING_VERSION = 1.0;
+				MERGED_BINARY_TYPE = none;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = xlpmg.TextCleaner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -781,6 +498,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -789,8 +508,10 @@
 		D95ACA5B2EF8758F0091AED3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -800,12 +521,27 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/imgclean/project/include/**",
+				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/imgclean/project/build",
+					/opt/homebrew/Cellar/libomp/21.1.8/lib,
+					/opt/homebrew/Cellar/libpng/1.6.53/lib,
+					"/opt/homebrew/Cellar/jpeg-turbo/3.1.3/lib",
+					"$(PROJECT_DIR)/build/Debug",
+					"$(PROJECT_DIR)/imgclean/project/build/Debug",
+				);
 				MARKETING_VERSION = 1.0;
+				MERGED_BINARY_TYPE = none;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = xlpmg.TextCleaner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -813,6 +549,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -898,33 +635,6 @@
 			};
 			name = Release;
 		};
-		D95ACAAD2EF888A10091AED3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEBUGGING_SYMBOLS = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 49QA7U9HVB;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		D95ACAAE2EF888A10091AED3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 49QA7U9HVB;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -960,15 +670,6 @@
 			buildConfigurations = (
 				D95ACA602EF8758F0091AED3 /* Debug */,
 				D95ACA612EF8758F0091AED3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D95ACAAC2EF888A10091AED3 /* Build configuration list for PBXLegacyTarget "imgclean" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D95ACAAD2EF888A10091AED3 /* Debug */,
-				D95ACAAE2EF888A10091AED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
