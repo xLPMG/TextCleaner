@@ -1,5 +1,7 @@
 # TextCleaner
 
+Warning: This project is WIP and not yet functional (due to imgclean not being fully implemented).
+
 ## Building
 
 1. Open the project in XCode
