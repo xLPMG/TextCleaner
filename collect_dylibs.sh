@@ -1,8 +1,6 @@
 #!/bin/zsh
-# Script to collect all dylibs used by imgclean, copy to Libs, re-sign, and fix rpath
-
+# Script to collect all dylibs used by imgclean, copy to imgclean-frameworks, re-sign, and fix rpath
 set -e
-
 
 # Paths
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -11,7 +9,6 @@ FRAMEWORKS_DIR="$ROOT_DIR/imgclean-frameworks"
 
 # Create imgclean-frameworks directory
 mkdir -p "$FRAMEWORKS_DIR"
-
 
 # Helper to resolve non-absolute dylib paths
 find_dylib_path() {
