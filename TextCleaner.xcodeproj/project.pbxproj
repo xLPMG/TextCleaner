@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9279FD22EF99F37000F76CB /* imgclean in Copy Files */ = {isa = PBXBuildFile; fileRef = D9279FD12EF99F37000F76CB /* imgclean */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D947264B2EFA0F5D009ECEDF /* libgcc_s.1.1.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726442EFA0F5D009ECEDF /* libgcc_s.1.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D947264C2EFA0F5D009ECEDF /* libjpeg.8.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726452EFA0F5D009ECEDF /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D947264D2EFA0F5D009ECEDF /* libintl.8.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726462EFA0F5D009ECEDF /* libintl.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D947264E2EFA0F5D009ECEDF /* libgomp.1.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726472EFA0F5D009ECEDF /* libgomp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D947264F2EFA0F5D009ECEDF /* libpng16.16.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726482EFA0F5D009ECEDF /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D94726502EFA0F5D009ECEDF /* libstdc++.6.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D94726492EFA0F5D009ECEDF /* libstdc++.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D94726512EFA0F5D009ECEDF /* libexif.12.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D947264A2EFA0F5D009ECEDF /* libexif.12.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D95199E92F2D727F0066D712 /* libexif.12.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D9D52B4E2F2D6EC10016AD13 /* libexif.12.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D95199EA2F2D727F0066D712 /* libgcc_s.1.1.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D9D52B492F2D6EC10016AD13 /* libgcc_s.1.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D95199EB2F2D727F0066D712 /* libgomp.1.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D9D52B4F2F2D6EC10016AD13 /* libgomp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D95199EC2F2D727F0066D712 /* libintl.8.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D9D52B4B2F2D6EC10016AD13 /* libintl.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D95199ED2F2D727F0066D712 /* libjpeg.8.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D9D52B4D2F2D6EC10016AD13 /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D95199EE2F2D727F0066D712 /* libpng16.16.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D9D52B4C2F2D6EC10016AD13 /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D95199EF2F2D727F0066D712 /* libstdc++.6.dylib in Copy Files (7 items) */ = {isa = PBXBuildFile; fileRef = D9D52B4A2F2D6EC10016AD13 /* libstdc++.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D9D52B582F2D6F150016AD13 /* imgclean in Copy Files */ = {isa = PBXBuildFile; fileRef = D9D52B572F2D6F150016AD13 /* imgclean */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +41,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D947264B2EFA0F5D009ECEDF /* libgcc_s.1.1.dylib in Copy Files (7 items) */,
-				D947264C2EFA0F5D009ECEDF /* libjpeg.8.dylib in Copy Files (7 items) */,
-				D947264D2EFA0F5D009ECEDF /* libintl.8.dylib in Copy Files (7 items) */,
-				D947264E2EFA0F5D009ECEDF /* libgomp.1.dylib in Copy Files (7 items) */,
-				D947264F2EFA0F5D009ECEDF /* libpng16.16.dylib in Copy Files (7 items) */,
-				D94726502EFA0F5D009ECEDF /* libstdc++.6.dylib in Copy Files (7 items) */,
-				D94726512EFA0F5D009ECEDF /* libexif.12.dylib in Copy Files (7 items) */,
+				D95199E92F2D727F0066D712 /* libexif.12.dylib in Copy Files (7 items) */,
+				D95199EA2F2D727F0066D712 /* libgcc_s.1.1.dylib in Copy Files (7 items) */,
+				D95199EB2F2D727F0066D712 /* libgomp.1.dylib in Copy Files (7 items) */,
+				D95199EC2F2D727F0066D712 /* libintl.8.dylib in Copy Files (7 items) */,
+				D95199ED2F2D727F0066D712 /* libjpeg.8.dylib in Copy Files (7 items) */,
+				D95199EE2F2D727F0066D712 /* libpng16.16.dylib in Copy Files (7 items) */,
+				D95199EF2F2D727F0066D712 /* libstdc++.6.dylib in Copy Files (7 items) */,
 			);
 			name = "Copy Files (7 items)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				D9279FD22EF99F37000F76CB /* imgclean in Copy Files */,
+				D9D52B582F2D6F150016AD13 /* imgclean in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,18 +66,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D9279FD12EF99F37000F76CB /* imgclean */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = imgclean; path = imgclean/project/build/imgclean; sourceTree = "<group>"; };
-		D9279FE82EF9A6BC000F76CB /* imgclean-frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "imgclean-frameworks"; sourceTree = "<group>"; };
-		D94726442EFA0F5D009ECEDF /* libgcc_s.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgcc_s.1.1.dylib; path = "imgclean-frameworks/libgcc_s.1.1.dylib"; sourceTree = "<group>"; };
-		D94726452EFA0F5D009ECEDF /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.8.dylib; path = "imgclean-frameworks/libjpeg.8.dylib"; sourceTree = "<group>"; };
-		D94726462EFA0F5D009ECEDF /* libintl.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libintl.8.dylib; path = "imgclean-frameworks/libintl.8.dylib"; sourceTree = "<group>"; };
-		D94726472EFA0F5D009ECEDF /* libgomp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgomp.1.dylib; path = "imgclean-frameworks/libgomp.1.dylib"; sourceTree = "<group>"; };
-		D94726482EFA0F5D009ECEDF /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = "imgclean-frameworks/libpng16.16.dylib"; sourceTree = "<group>"; };
-		D94726492EFA0F5D009ECEDF /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "imgclean-frameworks/libstdc++.6.dylib"; sourceTree = "<group>"; };
-		D947264A2EFA0F5D009ECEDF /* libexif.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexif.12.dylib; path = "imgclean-frameworks/libexif.12.dylib"; sourceTree = "<group>"; };
 		D95ACA362EF8758E0091AED3 /* TextCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95ACA452EF8758F0091AED3 /* TextCleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextCleanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95ACA4F2EF8758F0091AED3 /* TextCleanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextCleanerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D52B492F2D6EC10016AD13 /* libgcc_s.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgcc_s.1.1.dylib; path = "imgclean-frameworks/libgcc_s.1.1.dylib"; sourceTree = "<group>"; };
+		D9D52B4A2F2D6EC10016AD13 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "imgclean-frameworks/libstdc++.6.dylib"; sourceTree = "<group>"; };
+		D9D52B4B2F2D6EC10016AD13 /* libintl.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libintl.8.dylib; path = "imgclean-frameworks/libintl.8.dylib"; sourceTree = "<group>"; };
+		D9D52B4C2F2D6EC10016AD13 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = "imgclean-frameworks/libpng16.16.dylib"; sourceTree = "<group>"; };
+		D9D52B4D2F2D6EC10016AD13 /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.8.dylib; path = "imgclean-frameworks/libjpeg.8.dylib"; sourceTree = "<group>"; };
+		D9D52B4E2F2D6EC10016AD13 /* libexif.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexif.12.dylib; path = "imgclean-frameworks/libexif.12.dylib"; sourceTree = "<group>"; };
+		D9D52B4F2F2D6EC10016AD13 /* libgomp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgomp.1.dylib; path = "imgclean-frameworks/libgomp.1.dylib"; sourceTree = "<group>"; };
+		D9D52B572F2D6F150016AD13 /* imgclean */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = imgclean; path = imgclean/project/build/imgclean; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -126,15 +125,14 @@
 		D95ACA2D2EF8758E0091AED3 = {
 			isa = PBXGroup;
 			children = (
-				D947264A2EFA0F5D009ECEDF /* libexif.12.dylib */,
-				D94726442EFA0F5D009ECEDF /* libgcc_s.1.1.dylib */,
-				D94726472EFA0F5D009ECEDF /* libgomp.1.dylib */,
-				D94726462EFA0F5D009ECEDF /* libintl.8.dylib */,
-				D94726452EFA0F5D009ECEDF /* libjpeg.8.dylib */,
-				D94726482EFA0F5D009ECEDF /* libpng16.16.dylib */,
-				D94726492EFA0F5D009ECEDF /* libstdc++.6.dylib */,
-				D9279FE82EF9A6BC000F76CB /* imgclean-frameworks */,
-				D9279FD12EF99F37000F76CB /* imgclean */,
+				D9D52B572F2D6F150016AD13 /* imgclean */,
+				D9D52B4E2F2D6EC10016AD13 /* libexif.12.dylib */,
+				D9D52B492F2D6EC10016AD13 /* libgcc_s.1.1.dylib */,
+				D9D52B4F2F2D6EC10016AD13 /* libgomp.1.dylib */,
+				D9D52B4B2F2D6EC10016AD13 /* libintl.8.dylib */,
+				D9D52B4D2F2D6EC10016AD13 /* libjpeg.8.dylib */,
+				D9D52B4C2F2D6EC10016AD13 /* libpng16.16.dylib */,
+				D9D52B4A2F2D6EC10016AD13 /* libstdc++.6.dylib */,
 				D95ACA482EF8758F0091AED3 /* TextCleanerTests */,
 				D95ACA522EF8758F0091AED3 /* TextCleanerUITests */,
 				D9B3D23B2EF978D200FCAE89 /* Frameworks */,
@@ -467,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -528,6 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
