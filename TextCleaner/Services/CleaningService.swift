@@ -17,15 +17,16 @@ final class CleaningService {
      Cleans the supplied image using imgclean
      @param data the raw image data to be cleaned
      @param ext file extension of the image
+     @param approach the binarization approach to use (default: "bradley-roth")
      */
-    func cleanImage(data: Data, ext: String) async throws -> CleanResult {
+    func cleanImage(data: Data, ext: String, approach: String = "bradley-roth") async throws -> CleanResult {
         // save image data to temporary file
         let input = try saveTempFile(data: data, ext: ext)
         let output = input.deletingLastPathComponent()
             .appendingPathComponent(UUID().uuidString)
             .appendingPathExtension(ext)
 
-        let cleanedData = try await runImgClean(input: input, output: output)
+        let cleanedData = try await runImgClean(input: input, output: output, approach: approach)
         // delete input data again after cleaning
         try? FileManager.default.removeItem(at: input)
 
@@ -56,14 +57,14 @@ final class CleaningService {
                 userInfo: [NSLocalizedDescriptionKey: msg])
     }
 
-    private func runImgClean(input: URL, output: URL) async throws -> Data {
+    private func runImgClean(input: URL, output: URL, approach: String) async throws -> Data {
         let tool = try imgcleanExecutable()
 
         return try await withCheckedThrowingContinuation { continuation in
             DispatchQueue.global().async {
                 let task = Process()
                 task.executableURL = tool
-                task.arguments = ["-i", input.path, "-o", output.path]
+                task.arguments = ["-i", input.path, "-o", output.path, "-a", approach]
 
                 let stderr = Pipe()
                 task.standardError = stderr

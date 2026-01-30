@@ -18,8 +18,12 @@ struct ContentView: View {
     @State private var cleanedTempURL: URL?
     @State private var isCleaning = false
     @State private var errorMessage: String?
+    @State private var selectedApproach: String = "bradley-roth"
     
     let cleaner = CleaningService()
+    let approaches = [
+        "bradley-roth", "nick", "sauvola", "niblack", "bataineh"
+    ]
 
     var body: some View {
         VStack(spacing: 20) {
@@ -51,10 +55,24 @@ struct ContentView: View {
                         .disabled(cleanedImageData == nil)
                 }.padding()
             }
-            .padding()
 
-            Button("Clean Text") { Task { await clean() } }
-                .disabled(isCleaning || selectedImageData == nil)
+            if selectedImageData == nil {
+                Text("Please select an image to clean.")
+            } else {
+                HStack {
+                    Picker("", selection: $selectedApproach) {
+                        ForEach(approaches, id: \.self) { approach in
+                            Text(approach.capitalized).tag(approach)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                    .disabled(isCleaning || selectedImageData == nil)
+                    .help("Choose the algorithm used for image binarization. Although Bradley-Roth is often the best choice, other approaches may yield better results depending on the image characteristics.")
+
+                    Button("Clean Text") { Task { await clean() } }
+                        .disabled(isCleaning || selectedImageData == nil)
+                }.padding()
+            }
 
             if isCleaning { ProgressView().padding() }
             if let errorMessage { Text(errorMessage).foregroundColor(.red) }
@@ -69,7 +87,7 @@ struct ContentView: View {
 
         do {
             let ext = selectedItem?.supportedContentTypes.first?.preferredFilenameExtension ?? "jpg"
-            let result = try await cleaner.cleanImage(data: data, ext: ext)
+            let result = try await cleaner.cleanImage(data: data, ext: ext, approach: selectedApproach)
             cleanedImageData = result.cleanedData
             cleanedTempURL = result.tempURL
         } catch {
