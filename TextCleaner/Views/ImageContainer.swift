@@ -23,10 +23,6 @@ struct ImageContainer: View {
                     .frame(minHeight: 250, maxHeight: 750)
                     .overlay(Text("No \(title)"))
             }
-
-            Text(title)
-                .font(.caption)
-                .foregroundColor(.secondary)
         }
         .frame(minWidth: 250, maxWidth: 500)
     }

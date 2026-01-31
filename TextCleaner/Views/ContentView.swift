@@ -11,6 +11,11 @@ extension UTType {
     static let ppm = UTType(filenameExtension: "ppm")!
 }
 
+extension Notification.Name {
+    static let openImageCommand = Notification.Name("openImageCommand")
+    static let saveImageCommand = Notification.Name("saveImageCommand")
+}
+
 struct ContentView: View {
     @State private var selectedItem: PhotosPickerItem?
     @State private var selectedImageData: Data?
@@ -20,64 +25,88 @@ struct ContentView: View {
     @State private var errorMessage: String?
     @State private var selectedApproach: String = "bradley-roth"
     
+    private var isShowingError: Binding<Bool> {
+        Binding(
+            get: { errorMessage != nil },
+            set: { if !$0 { errorMessage = nil } }
+        )
+    }
+    
     let cleaner = CleaningService()
     let approaches = [
         "bradley-roth", "nick", "sauvola", "niblack", "bataineh"
     ]
 
     var body: some View {
-        VStack(spacing: 20) {
-            HStack(spacing: 20) {
-                VStack(spacing: 20) {
+        NavigationStack {
+            VStack(spacing: 20) {
+                HStack(spacing: 20) {
                     ImageContainer(title: "Original Image", data: selectedImageData)
-                    
-                    PhotosPicker("Select Image", selection: $selectedItem, matching: .images)
-                        .buttonStyle(.borderedProminent)
-                        .onChange(of: selectedItem) {
-                            Task {
-                                if let data = try? await selectedItem?.loadTransferable(type: Data.self),
-                                   let ext = selectedItem?.supportedContentTypes.first?.preferredFilenameExtension?.lowercased(),
-                                   ["jpg","jpeg","png","ppm"].contains(ext)
-                                {
-                                    selectedImageData = data
-                                } else {
-                                    errorMessage = "Unsupported file type"
-                                }
+                    VStack {
+                        Image(systemName: "arrow.right")
+                            .font(.largeTitle)
+                        // the cleaning process is so fast, that a progress view is not necessary
+                        // if isCleaning { ProgressView().padding() }
+                    }
+                    ImageContainer(title: "Cleaned Image", data: cleanedImageData)
+                }
+            }
+            .padding()
+            .onChange(of: selectedApproach) {
+                guard selectedImageData != nil else { return }
+                Task { await clean() }
+            }
+            .onChange(of: selectedImageData) {
+                guard selectedImageData != nil else { return }
+                Task { await clean() }
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .openImageCommand)) { _ in
+                openImageWithPanel()
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .saveImageCommand)) { _ in
+                guard cleanedImageData != nil else { return }
+                saveCleanedImage()
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                PhotosPicker("Select Image", selection: $selectedItem, matching: .images)
+                    .buttonStyle(.bordered)
+                    .onChange(of: selectedItem) {
+                        Task {
+                            if let data = try? await selectedItem?.loadTransferable(type: Data.self),
+                               let ext = selectedItem?.supportedContentTypes.first?.preferredFilenameExtension?.lowercased(),
+                               ["jpg","jpeg","png","ppm"].contains(ext)
+                            {
+                                selectedImageData = data
+                            } else {
+                                errorMessage = "Unsupported file type"
                             }
                         }
-                }.padding()
-                
-                VStack(spacing: 20) {
-                    ImageContainer(title: "Cleaned Image", data: cleanedImageData)
-                    
-                    Button("Save Image") { saveCleanedImage() }
-                        .buttonStyle(.borderedProminent)
-                        .disabled(cleanedImageData == nil)
-                }.padding()
-            }
-
-            if selectedImageData == nil {
-                Text("Please select an image to clean.")
-            } else {
-                HStack {
-                    Picker("", selection: $selectedApproach) {
-                        ForEach(approaches, id: \.self) { approach in
-                            Text(approach.capitalized).tag(approach)
-                        }
                     }
-                    .pickerStyle(.menu)
-                    .disabled(isCleaning || selectedImageData == nil)
-                    .help("Choose the algorithm used for image binarization. Although Bradley-Roth is often the best choice, other approaches may yield better results depending on the image characteristics.")
-
-                    Button("Clean Text") { Task { await clean() } }
-                        .disabled(isCleaning || selectedImageData == nil)
-                }.padding()
             }
-
-            if isCleaning { ProgressView().padding() }
-            if let errorMessage { Text(errorMessage).foregroundColor(.red) }
+            ToolbarItem(placement: .primaryAction) {
+                Picker("", selection: $selectedApproach) {
+                    ForEach(approaches, id: \.self) { approach in
+                        Text(approach.capitalized).tag(approach)
+                    }
+                }
+                .pickerStyle(.menu)
+                .disabled(isCleaning || selectedImageData == nil)
+                .help("Choose the algorithm used for image binarization. Although Bradley-Roth is often the best choice, other approaches may yield better results depending on the image characteristics.")
+            }
+            
+            ToolbarItem(placement: .primaryAction) {
+                Button("Save Image") { saveCleanedImage() }
+                    .buttonStyle(.bordered)
+                    .disabled(cleanedImageData == nil)
+            }
         }
-        .padding()
+        .alert("Error", isPresented: isShowingError) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(errorMessage ?? "")
+        }
     }
 
     private func clean() async {
@@ -95,6 +124,22 @@ struct ContentView: View {
         }
 
         isCleaning = false
+    }
+    
+    private func openImageWithPanel() {
+        let panel = NSOpenPanel()
+        panel.allowedContentTypes = [.jpeg, .png, .ppm]
+        panel.allowsMultipleSelection = false
+
+        panel.begin { response in
+            guard response == .OK, let url = panel.url else { return }
+            do {
+                let data = try Data(contentsOf: url)
+                selectedImageData = data
+            } catch {
+                errorMessage = error.localizedDescription
+            }
+        }
     }
 
     private func saveCleanedImage() {
@@ -119,3 +164,4 @@ struct ContentView: View {
 }
 
 #Preview { ContentView() }
+

@@ -2,9 +2,11 @@
 
 TextCleaner is a macOS application that utilizes the [imgclean](https://github.com/xLPMG/imgclean) CLI tool to enhance scanned images by turning noisy, colored scans into clean, black-and-white images. It is particularly useful for preparing documents for Optical Character Recognition (OCR) or for improving the readability of scanned text.
 
+![TextCleaner Screenshot](graphics/TextCleaner.png)
+
 I have started this project as a learning exercise to familiarize myself with macOS application development using XCode and Swift. The idea is simple: provide a GUI wrapper around the [imgclean](https://github.com/xLPMG/imgclean) CLI tool to make it accessible to users who may not be comfortable using command-line tools. Unfortunately, I do not have an Apple Developer license, so I cannot distribute a signed version of this application. This means that for now, you will have to build the application yourself if you wish to use it.
 
-Furthermore, Apples notarization requirements have made this app even more challenging to distribute. `imgclean` relies on several third-party libraries, which means that they need to be included with the application bundle as well. However, these libraries must be properly signed by the same developer ID as the main application to satisfy Apple's security checks. Since the libraries are neither built nor signed by me, I cannot include them as-is. Therefore, a re-signing step is necessary, but the script `collect_dylibs.sh` provided in this repository automates this process for you.
+Furthermore, Apple's notarization requirements have made packaging this app even more challenging. `imgclean` relies on several third-party libraries, which means that they need to be included with the application bundle as well. However, these libraries must be properly signed by the same developer ID as the main application to satisfy Apple's security checks. Since the libraries are neither built nor signed by me, I cannot include them as-is. Therefore, a re-signing step is necessary, but the script `collect_dylibs.sh` provided in this repository automates this process for you.
 
 ## Building
 
